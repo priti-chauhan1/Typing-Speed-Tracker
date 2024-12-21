@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Typing Speed Tracker</h1>
+            <button class="theme-toggle-btn" id="theme-toggle-btn">🌙 Toggle Dark Mode</button>
+        </header>
+
+        <!-- Timer and Test Duration -->
+        <div class="timer-section">
+            <select id="time-select">
+                <option value="1">1 Minute</option>
+                <option value="3">3 Minutes</option>
+                <option value="5">5 Minutes</option>
+            </select>
+            <button id="start-btn">Start Test</button>
+        </div>
+
+        <!-- Typing Test Section -->
+        <div class="typing-area">
+            <p id="text-to-type">The quick brown fox jumps over the lazy dog.</p>
+            <textarea id="input-field" placeholder="Start typing here..." disabled></textarea>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results">
+            <p id="wpm">Words Per Minute: 0</p>
+            <p id="accuracy">Accuracy: 0%</p>
+            <p id="timer">Time: 00:00</p>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
